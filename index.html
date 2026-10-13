@@ -15,6 +15,7 @@
 <style>
 @font-face{font-family:"Geist";src:url("assets/fonts/Geist-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:"QXR Serif";src:url("assets/fonts/NotoSerifSC-Light-subset.woff2") format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:"QXR Serif";src:url("assets/fonts/NotoSerifSC-Light-add1.woff2") format("woff2");font-weight:300;font-display:swap;unicode-range:U+808C,U+8089,U+5B58,U+94B1,U+7F50}
 @font-face{font-family:"Geist Mono";src:url("assets/fonts/GeistMono-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 
 :root{
@@ -680,7 +681,7 @@ section.block{padding:144px 0 89px}
         </div>
         <div class="rest">
           <p class="role enter" style="--i:2">跨境电商运营 <em>/</em> AI 应用运营</p>
-          <p class="lede enter" style="--i:3">武汉传媒学院电子商务本科，2026-06 毕业，专业排名前 5%。做过连锁品牌线上网店的店铺矩阵运营，播过拼多多店的 8 场起号直播。用 AI 编程工具做了 7 个主要工具，另有 13 个自用小工具；下面的案例附数据和搭建方式。</p>
+          <p class="lede enter" style="--i:3">武汉传媒学院电子商务本科，2026-06 毕业，专业排名前 5%。做过连锁品牌线上网店的店铺矩阵运营，播过拼多多店的 8 场起号直播。用 AI 编程工具做了 8 个主要工具，另有 13 个自用小工具；下面的案例附数据和搭建方式。</p>
           <dl class="contact enter" style="--i:4">
             <div><dt class="mono">电话 / 微信</dt><dd class="num">130 5309 3056</dd></div>
             <div><dt class="mono">邮箱</dt><dd><button class="copy" type="button" data-copy="1285868754@qq.com" aria-label="复制邮箱 1285868754@qq.com"><span class="num">1285868754@qq.com</span><span class="tip" aria-live="polite">复制</span></button></dd></div>
@@ -824,8 +825,12 @@ section.block{padding:144px 0 89px}
         <span class="tile-media"><img src="assets/img/gym-guide.webp" alt="" width="780" height="1688"></span>
         <span class="tile-cap"><span class="tile-meta mono">06 · 2026-10 · 自用小工具</span><span class="tile-t"><span class="ul">三分化跟练页</span></span></span>
       </button>
-      <div class="tile tile-note tile-wide">
-        <span class="tile-meta mono">07 · 其余</span>
+      <button class="tile tile-mat" type="button" data-case="case-miniapp" aria-expanded="false" aria-controls="case-miniapp">
+        <span class="tile-media"><img src="assets/img/miniapp-train.webp" alt="" width="430" height="752"></span>
+        <span class="tile-cap"><span class="tile-meta mono">07 · 2026-10 · 微信小程序</span><span class="tile-t"><span class="ul">肌肉存钱罐</span></span></span>
+      </button>
+      <div class="tile tile-note">
+        <span class="tile-meta mono">08 · 其余</span>
         <h3 class="tile-t">另有 12 个自用小工具，和开店导师 Agent、Minecraft 一键部署</h3>
         <p>没有能放的截图，不硬配图，按类别写在「做过的东西」里。</p>
         <a class="link" href="#log">看时间线 ↓</a>
@@ -1521,6 +1526,46 @@ section.block{padding:144px 0 89px}
       </div>
       </div>
     </article>
+    <article class="case case-panel" id="case-miniapp" tabindex="-1">
+      <div class="case-top">
+        <span class="no mono">07</span>
+        <h3>肌肉存钱罐</h3>
+        <span class="meta mono">个人项目 · 微信小程序</span>
+        <time class="date mono">2026-10</time>
+        <button class="close mono" type="button" data-close>收起</button>
+      </div>
+      <div class="case-body">
+      <div class="pdr">
+        <div>
+          <h4><b>A</b>问题</h4>
+          <p>健身记录 App 大多要注册、带广告，训练计划、饮食和体重分散在几个地方。想要一个打开微信就能跟练、按自己体重算该吃多少的工具。</p>
+        </div>
+        <div>
+          <h4><b>B</b>做法</h4>
+          <ol>
+            <li><span><em class="k">跟练</em>：练几休一自动顺延，打勾记组数和重量，组间计时；器械被占一键换平替动作</span></li>
+            <li><span><em class="k">动作库</em>：接入开源动作图库，每个动作配起始和发力两张图、三条中文要点</span></li>
+            <li><span><em class="k">饮食</em>：按体重和训练日、休息日算三大营养素克数，记一天吃了什么</span></li>
+            <li><span><em class="k">计划</em>：自定义训练计划，也能导入文字计划、分享码和其他健身 App 导出的记录</span></li>
+          </ol>
+        </div>
+        <div>
+          <h4><b>C</b>结果</h4>
+          <ul class="res">
+            <li><b class="num">273 个</b><span>动作配图和要点</span></li>
+            <li><b class="num">1.3 MB</b><span>小程序包，动作图压成黑白线稿</span></li>
+            <li><b class="num">4 页</b><span>训练、饮食、体重、计划，数据只存在手机本地</span></li>
+          </ul>
+          <p>已发布体验版，正式上线在走备案和审核。</p>
+        </div>
+      </div>
+      <div class="shots">
+        <div class="strip strip-one">
+          <figure><button class="zoom mat" type="button" data-cap="肌肉存钱罐：训练页"><img src="assets/img/miniapp-train.webp" alt="肌肉存钱罐训练页截图" width="430" height="752" loading="lazy" style="max-height:640px;width:auto;margin:0 auto"></button></figure>
+        </div>
+      </div>
+      </div>
+    </article>
     </div>
   </div>
 </section>
@@ -1530,7 +1575,7 @@ section.block{padding:144px 0 89px}
   <div class="wrap">
     <div class="head">
       <span class="idx mono">03 / 记录</span>
-      <div><h2>做过的东西</h2><p class="prose">按类别分组，组内按时间倒序。7 个主要工具，另有 13 个自用小工具，加 1 个团队项目。</p></div>
+      <div><h2>做过的东西</h2><p class="prose">按类别分组，组内按时间倒序。8 个主要工具，另有 13 个自用小工具，加 1 个团队项目。</p></div>
     </div>
     <div class="ship-group">
       <h3 class="ship-h mono">求职与电商<span>4</span></h3>
@@ -1564,8 +1609,9 @@ section.block{padding:144px 0 89px}
     </ol>
     </div>
     <div class="ship-group">
-      <h3 class="ship-h mono">生活<span>5</span></h3>
+      <h3 class="ship-h mono">生活<span>6</span></h3>
     <ol class="ship">
+      <li><time class="mono">2026-10</time><b><a href="#case-miniapp">肌肉存钱罐（微信小程序）</a></b><span>跟练、动作图解、饮食克数和体重曲线放进一个小程序，273 个动作配图</span></li>
       <li><time class="mono">2026-10</time><b><a href="#case-gym">三分化跟练页</a></b><span>把训练计划做成手机跟练页</span></li>
       <li><time class="mono">2026-10</time><b>行业报告教练</b><span>每周带读一份行业报告</span></li>
       <li><time class="mono">2026-09</time><b>登机牌壁纸</b><span>桌面动态壁纸，天空随真实日照变色</span></li>
