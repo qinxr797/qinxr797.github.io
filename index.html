@@ -16,6 +16,7 @@
 @font-face{font-family:"Geist";src:url("assets/fonts/Geist-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 @font-face{font-family:"QXR Serif";src:url("assets/fonts/NotoSerifSC-Light-subset.woff2") format("woff2");font-weight:300;font-display:swap}
 @font-face{font-family:"QXR Serif";src:url("assets/fonts/NotoSerifSC-Light-add1.woff2") format("woff2");font-weight:300;font-display:swap;unicode-range:U+808C,U+8089,U+5B58,U+94B1,U+7F50}
+@font-face{font-family:"QXR Serif";src:url("assets/fonts/NotoSerifSC-Light-add2.woff2") format("woff2");font-weight:300;font-display:swap;unicode-range:U+663E,U+793A,U+5668,U+9065,U+63A7,U+9762,U+677F}
 @font-face{font-family:"Geist Mono";src:url("assets/fonts/GeistMono-Variable.woff2") format("woff2");font-weight:100 900;font-display:swap}
 
 :root{
@@ -681,7 +682,7 @@ section.block{padding:144px 0 89px}
         </div>
         <div class="rest">
           <p class="role enter" style="--i:2">跨境电商运营 <em>/</em> AI 应用运营</p>
-          <p class="lede enter" style="--i:3">武汉传媒学院电子商务本科，2026-06 毕业，专业排名前 5%。做过连锁品牌线上网店的店铺矩阵运营，播过拼多多店的 8 场起号直播。用 AI 编程工具做了 8 个主要工具，另有 13 个自用小工具；下面的案例附数据和搭建方式。</p>
+          <p class="lede enter" style="--i:3">武汉传媒学院电子商务本科，2026-06 毕业，专业排名前 5%。做过连锁品牌线上网店的店铺矩阵运营，播过拼多多店的 8 场起号直播。用 AI 编程工具做了 9 个主要工具，另有 13 个自用小工具；下面的案例附数据和搭建方式。</p>
           <dl class="contact enter" style="--i:4">
             <div><dt class="mono">电话 / 微信</dt><dd class="num">130 5309 3056</dd></div>
             <div><dt class="mono">邮箱</dt><dd><button class="copy" type="button" data-copy="1285868754@qq.com" aria-label="复制邮箱 1285868754@qq.com"><span class="num">1285868754@qq.com</span><span class="tip" aria-live="polite">复制</span></button></dd></div>
@@ -829,8 +830,12 @@ section.block{padding:144px 0 89px}
         <span class="tile-media"><img src="assets/img/miniapp-train.webp" alt="" width="430" height="752"></span>
         <span class="tile-cap"><span class="tile-meta mono">07 · 2026-10 · 微信小程序</span><span class="tile-t"><span class="ul">肌肉存钱罐</span></span></span>
       </button>
-      <div class="tile tile-note">
-        <span class="tile-meta mono">08 · 其余</span>
+      <button class="tile tile-mat tile-dark" type="button" data-case="case-monitor" aria-expanded="false" aria-controls="case-monitor">
+        <span class="tile-media"><img src="assets/img/monitorbar-overview.webp" alt="" width="720" height="1544"><img src="assets/img/monitorbar-picture.webp" alt="" width="720" height="1600"></span>
+        <span class="tile-cap"><span class="tile-meta mono">08 · 2026-10 · Windows 托盘工具</span><span class="tile-t"><span class="ul">显示器遥控面板</span></span></span>
+      </button>
+      <div class="tile tile-note tile-wide">
+        <span class="tile-meta mono">09 · 其余</span>
         <h3 class="tile-t">另有 12 个自用小工具，和开店导师 Agent、Minecraft 一键部署</h3>
         <p>没有能放的截图，不硬配图，按类别写在「做过的东西」里。</p>
         <a class="link" href="#log">看时间线 ↓</a>
@@ -1566,6 +1571,57 @@ section.block{padding:144px 0 89px}
       </div>
       </div>
     </article>
+    <article class="case case-panel" id="case-monitor" tabindex="-1">
+      <div class="case-top">
+        <span class="no mono">08</span>
+        <h3>显示器遥控面板</h3>
+        <span class="meta mono">个人项目 · Windows 托盘工具 · 基于开源项目 MonitorBar 二次开发</span>
+        <time class="date mono">2026-10</time>
+        <button class="close mono" type="button" data-close>收起</button>
+      </div>
+      <div class="case-body">
+      <div class="pdr">
+        <div>
+          <h4><b>A</b>问题</h4>
+          <p>电竞显示器（华硕 VG259QM，240Hz）的设置要靠背后的摇杆一层层翻菜单，换个色温、开个静音都得摸黑按好几下。想要点一下电脑右下角就能调。</p>
+        </div>
+        <div>
+          <h4><b>B</b>做法</h4>
+          <ol>
+            <li><span><em class="k">在开源项目上二次开发</em>：基于 GitHub 开源的显示器管理工具 MonitorBar（Go 语言，MIT 协议），做成 Windows 右下角托盘面板，点开就能调</span></li>
+            <li><span><em class="k">补齐显示器自带的设置</em>：色温预设（暖色、标准、冷色、用户）、饱和度、静音、菜单语言；恢复亮度对比度、恢复色彩、恢复出厂都要点两次确认，防误触；加了固件和 MCCS 版本信息页</span></li>
+            <li><span><em class="k">场景直接改硬件</em>：游戏、观影、真彩、夜间四个场景直接改显示器的背光、对比度和用户色温下的红绿蓝增益，不动软件 Gamma；「真彩」参考 Tom's Hardware、RTINGS 用校色仪测得的校准值</span></li>
+            <li><span><em class="k">排查通信问题</em>：显示器连续收到指令会丢掉后一条、连跑几次会暂时不回应，改成每条指令间隔 50 毫秒并自动重试；锐度能读出但写不进去，改成只显示显示器能力表里声明的项目</span></li>
+          </ol>
+        </div>
+        <div>
+          <h4><b>C</b>结果</h4>
+          <ul class="res">
+            <li><b class="num">4 个</b><span>场景一键切换，直接改显示器硬件</span></li>
+            <li><b class="num">50 毫秒</b><span>指令间隔加自动重试，连续调节不再丢指令</span></li>
+            <li><b class="num">3 档</b><span>恢复默认，点两次才生效</span></li>
+          </ul>
+          <p>全部改动在真机上逐项读写验证过；原项目自带测试和新增测试全部通过。</p>
+        </div>
+      </div>
+      <div class="arch arch-lite">
+        <dl class="spec mono">
+<div><dt>运行环境</dt><dd>Windows 托盘常驻，点右下角图标打开面板</dd></div>
+<div><dt>上游项目</dt><dd>MonitorBar（作者 Binaryify，MIT 协议，Go 语言），在其基础上二次开发</dd></div>
+<div><dt>控制方式</dt><dd>DDC/CI 直接读写显示器设置，和机身按键菜单是同一套参数</dd></div>
+<div><dt>关键机制</dt><dd>指令间隔 50 毫秒 + 自动重试；只显示能力表声明的项目；关掉上游自动更新，避免覆盖改动</dd></div>
+<div><dt>怎么验证</dt><dd>每项改动在真机上读写核对；原项目测试 + 新增测试全部通过</dd></div>
+        </dl>
+      </div>
+      </div>
+      <div class="shots">
+        <div class="strip" style="grid-template-columns:repeat(3,minmax(0,220px))">
+          <figure><button class="zoom mat" type="button" data-cap="显示器遥控面板：概览"><img src="assets/img/monitorbar-overview.webp" alt="显示器遥控面板概览页截图" width="720" height="1544" loading="lazy"></button></figure>
+          <figure><button class="zoom mat" type="button" data-cap="显示器遥控面板：画面"><img src="assets/img/monitorbar-picture.webp" alt="显示器遥控面板画面页截图" width="720" height="1600" loading="lazy"></button></figure>
+          <figure><button class="zoom mat" type="button" data-cap="显示器遥控面板：显示器设置与信息"><img src="assets/img/monitorbar-monitor.webp" alt="显示器遥控面板显示器页截图" width="720" height="1308" loading="lazy"></button></figure>
+        </div>
+      </div>
+    </article>
     </div>
   </div>
 </section>
@@ -1575,7 +1631,7 @@ section.block{padding:144px 0 89px}
   <div class="wrap">
     <div class="head">
       <span class="idx mono">03 / 记录</span>
-      <div><h2>做过的东西</h2><p class="prose">按类别分组，组内按时间倒序。8 个主要工具，另有 13 个自用小工具，加 1 个团队项目。</p></div>
+      <div><h2>做过的东西</h2><p class="prose">按类别分组，组内按时间倒序。9 个主要工具，另有 13 个自用小工具，加 1 个团队项目。</p></div>
     </div>
     <div class="ship-group">
       <h3 class="ship-h mono">求职与电商<span>4</span></h3>
@@ -1594,8 +1650,9 @@ section.block{padding:144px 0 89px}
     </ol>
     </div>
     <div class="ship-group">
-      <h3 class="ship-h mono">AI 工作台与效率工具<span>10</span></h3>
+      <h3 class="ship-h mono">AI 工作台与效率工具<span>11</span></h3>
     <ol class="ship">
+      <li><time class="mono">2026-10</time><b><a href="#case-monitor">显示器遥控面板</a></b><span>基于开源项目二次开发，右下角点开就能调显示器的色温、场景和菜单语言</span></li>
       <li><time class="mono">2026-10</time><b>手机遥控</b><span>手机远程给电脑派活、看进度</span></li>
       <li><time class="mono">2026-09</time><b>剪贴板截图直读</b><span>截完图，让 AI 直接看</span></li>
       <li><time class="mono">2026-09</time><b>模型哨兵</b><span>实际模型和界面对不上就提醒</span></li>
@@ -1879,7 +1936,7 @@ section.block{padding:144px 0 89px}
     }
     art.classList.remove('open');
     var holder = document.getElementById('cases');
-    ['case-shopee','case-pctuner','case-pixel','case-studio','case-coach','case-gym'].forEach(function(id){ holder.appendChild(document.getElementById(id)); });
+    ['case-shopee','case-pctuner','case-pixel','case-studio','case-coach','case-gym','case-miniapp','case-monitor'].forEach(function(id){ holder.appendChild(document.getElementById(id)); });
     cells.forEach(function(t){ if (t.getAttribute('data-case')) t.setAttribute('aria-expanded', 'false'); });
     openId = null;
   }
